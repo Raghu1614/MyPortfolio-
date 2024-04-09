@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   /* background-color: #555;*/
+   background-image: url(background.webp);
+  background-size: cover;
+  
+  }
+  
+  header{
+    margin: 0;
+    padding: 0;
+    background-image: url(headerimage.jpg);
+  }
+  
+  /* menu bar*/
+  nav ul {
+  list-style-type: none;
+  position:fixed;
+  width: 98%;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #0b0c10;
+  /*background-image: url(headerimage.jpg);
+  background-size: cover;*/
+  }
+  
+  li {
+  float: right;
+  }
+  
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+  background-color: #111;
+  }
+  nav ul li a:hover{
+    background-color:black;
+  color:#45a29e;
+  
+  transform: scale(1.1);
+  }
+  nav ul li a:active{
+    color:#45a29e;
+  }
+  
+
+.section1{
+    height: 20vh;
+    
+}
+
+.section2{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*card-container*/
+
+
+  
+  .contact-card {
+    width: 20rem;
+    height: 23rem;
+    padding:    10px;
+    margin-left: 35%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+    text-align: center;
+    background-color: #45a29e;
+  }  
+  
+  .contact-card h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-card ul {
+    list-style: none;
+    padding: 30;
+  }
+  
+  .contact-card ul li {
+    margin-bottom: 10px;
+  }
+
+  .contact-card ul li p {
+   float: left;
+  }
+  
+  
+  .contact-card ul li strong {
+    font-weight: bold;
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    display: line;
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2);
+  }
+  
+
+
+
+@media screen and (max-width:720px){
+  .contact-card {
+    width: 20rem;
+    height: 23rem;
+    padding:    10px;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+}
+
+@media screen and (max-width:720px){
+ body{
+  background-size:200%;
+ }
+}

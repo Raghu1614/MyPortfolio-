@@ -1,0 +1,296 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  background-image: url(headerimage.jpg);
+}
+
+/* menu bar*/
+ul {
+list-style-type: none;
+position:fixed;
+width: 98%;
+margin: 0;
+padding: 20px;
+overflow: hidden;
+background-color: #0b0c10;
+/*background-image: url(headerimage.jpg);
+background-size: cover;*/
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+nav ul li a:hover{
+  background-color:black;
+color:#45a29e;
+
+transform: scale(1.1);
+}
+nav ul li a:active{
+  color:#45a29e;
+}
+
+
+
+
+/*SECTIONS */
+
+.section1{
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* background-image: url(paint.jpg);
+  background-size: cover;*/
+  /*background: linear-gradient(to right,  #555 30%, white 30%);*/
+  background-image: url(background2.jpg);
+  background-size: cover;
+}
+
+/* box-container*/
+.box-container{
+  width: 900px;
+  display: flex;  
+  justify-content:center;
+  align-items: center;
+  
+  height: 420px;
+ /* background-image: url(paint.png);
+  background-size: cover;*/
+ 
+}
+
+
+
+/*card-container*/
+.card-container{
+  display: flex;
+  justify-content: center;
+ 
+ 
+ 
+}
+.card {
+  width: 16rem;
+  height: 23rem;
+  padding:    10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px gray;
+  text-align: center;
+   background-color: 45a29e;
+  
+  /*66fcf1*/
+}
+.profile-photo {
+  width:10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+
+
+/*matter*/
+.box {
+  
+  margin-right: 15px; /* Adjust spacing as needed */
+}
+.text-container{
+
+ display: flex;
+  justify-content: center;
+  margin-top: 0;
+  width: 35em;
+  height: 25em;
+ 
+  
+
+ 
+}
+.text h1{
+  font-size: 50px;
+  color: #45a29e;
+  font-family:sans-serif;
+ 
+
+}
+.text h2{
+  color: white;
+}
+.text p{
+ text-align: justify;
+ color: white;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.text a{
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+ border-radius: 10%;
+ border-color: white;
+}
+.text a:hover{
+  color:#66fcf1;
+  background-color: #c5c6c7;
+  
+}
+.button{
+  background-color: 007bff;
+}
+
+
+
+/* FOOTER*/
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+ 
+  bottom: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 720px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 720px) {
+  .box-container{
+      display: block;
+      height: 60em;
+  }
+}
+@media screen and (max-width: 720px){
+  .section1{
+      height: 150vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(background2.jpg);
+  background-size: cover;
+      /*background: linear-gradient(to right,  #555 40%, white 40%);*/
+
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .text-container{
+
+     width: 100%;
+     margin-left: 2%;
+     margin-right: 3%;       
+       /*background-image: url(paintbox400.jpg);*/
+      /* background: linear-gradient(to right,  #f4dacd 50%, white 50%);*/
+  }  
+  
+}
+
+@media screen and (max-width: 720px) {
+  
+  .text h1{
+      font-size: 50px;
+      text-align: center;
+      color: 45a29e;
+  
+
+  }
+}
+
+@media screen and (max-width: 720px) {
+  
+  .text h2{
+      
+      text-align: center;
+  
+
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .text p{
+  text-align: justify;
+  justify-content: center;
+      
+
+  }
+
+}
