@@ -240,7 +240,7 @@ footer a {
 }
 @media screen and (max-width: 720px) {
  .section2{
-   height:0vh; 
+   height:15vh; 
    background-color: #333;
 }
 }
